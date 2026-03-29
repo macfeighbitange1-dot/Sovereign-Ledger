@@ -1,0 +1,10 @@
+<%= turbo_stream.append "messages_container" do %>
+  <div class="self-end bg-cyan-900 p-3 rounded-lg max-w-[80%]">
+    <span class="text-xs font-bold block mb-1 text-cyan-400 uppercase">user</span>
+    <%= @message.content %>
+  </div>
+  <div class="self-start bg-slate-700 p-3 rounded-lg max-w-[80%]">
+    <span class="text-xs font-bold block mb-1 text-cyan-400 uppercase">assistant</span>
+    <%= @ai_message.content %>
+  </div>
+<% end %>
